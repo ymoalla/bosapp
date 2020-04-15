@@ -1,7 +1,9 @@
 h1 { color:#20d113;text-align:center; }
+
 p { color:red ;
     text-align: left;
-    }
+}
+
 div { background-color: green;
       height: auto ;
       width: auto ;
@@ -11,28 +13,85 @@ div { background-color: green;
       font-size: 28px;
       font-weight: bold;
       border: 3px solid blue;
-    }
+}
 
-    table {
+ul > li { color: white ;}
+
+a::before {
+  content: "\21d2 Click here: " ;
+  font-weight: bold;
+}
+
+ol li { color: magenta;}
+
+table {
       border: 2px solid black;
       border-collapse:  collapse;
+}
 
-    }
-    th, td {
+input[type=number] {
+      background-color: yellow;
+}
+
+input[type=text] {
+      background-color: gray;
+}
+
+input[class=mandatory]
+    {  background-color: red;
+}
+
+button {
+      width: 200px;
+      height: 50px;
+      font-size: 24px;
+      background-color: grey;
+}
+
+button:hover  {
+      background-color: orange;
+}
+
+th, td {
       border: 2px solid black;
       padding: 5px;
-    }
-   th {
+}
+
+th {
       background-color: lightgray;
+ }
+
+p::selection {
+  color: pink;
+  background-color: magenta;
+}
+
+ @media print {
+   .screenonly {
+     display: none;
    }
+ }
 
-  #top {
+ @media (min-width:500px) {
+   body{
+     background-color: red;
+   }
+ }
 
+ @media (max-width:499px) {
+   body{
+     background-color: blue;
+   }
+ }
+
+#top {
     font-size: 36px;
-  }
-  #middle {
+}
+
+#middle {
     font-size: 24px;
-  }
+}
+
 #bottom {
   font-size: 12px;
 }
